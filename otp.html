@@ -7,20 +7,28 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="otp.css" />
     <link rel="stylesheet" href="" />
     <title>OTP Generator</title>
   </head>
   <body>
     <div class="otp-box">
-      <h2>6 digit OTP Generator</h2>
+      <h2>OTP Generator</h2>
       <input
         type="text"
         id="otpBox"
         placeholder="OTP will appear here"
         readonly
       />
-      <button id="otp">Generate OTP</button>
+      <div class="buttons">
+        <button id="otp"><i class="fas fa-key"></i> Generate OTP</button>
+        <button id="copyOtp"><i class="fas fa-copy"></i> Copy OTP</button>
+      </div>
+      <div id="message" class="message"></div>
     </div>
     <script src="otp.js"></script>
   </body>

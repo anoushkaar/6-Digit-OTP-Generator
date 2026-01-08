@@ -26,7 +26,7 @@ html {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 380px;
   animation: fadeIn 0.8s ease-out;
 }
 
@@ -48,6 +48,42 @@ html {
   font-family: "DM Serif Text", serif;
   color: #333;
   margin: 0;
+}
+
+.options {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.option-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+select {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
 }
 
 input {
@@ -87,6 +123,14 @@ input:focus {
     background-color: #f9f9f9;
     transform: scale(1);
   }
+}
+
+.countdown {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff6b6b;
+  min-height: 24px;
 }
 
 .buttons {
@@ -165,6 +209,11 @@ button:active {
 
   .otp-box h2 {
     font-size: 24px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 10px;
   }
 
   input {

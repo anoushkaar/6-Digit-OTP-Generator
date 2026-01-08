@@ -18,12 +18,32 @@
   <body>
     <div class="otp-box">
       <h2>OTP Generator</h2>
+      <div class="options">
+        <div class="option-group">
+          <label for="otpLength">Length:</label>
+          <select id="otpLength">
+            <option value="4">4 digits</option>
+            <option value="6" selected>6 digits</option>
+            <option value="8">8 digits</option>
+          </select>
+        </div>
+        <div class="option-group">
+          <label for="otpTimer">Expires in:</label>
+          <select id="otpTimer">
+            <option value="0">Never</option>
+            <option value="30">30 sec</option>
+            <option value="60" selected>1 min</option>
+            <option value="300">5 min</option>
+          </select>
+        </div>
+      </div>
       <input
         type="text"
         id="otpBox"
         placeholder="OTP will appear here"
         readonly
       />
+      <div id="countdown" class="countdown"></div>
       <div class="buttons">
         <button id="otp"><i class="fas fa-key"></i> Generate OTP</button>
         <button id="copyOtp"><i class="fas fa-copy"></i> Copy OTP</button>
